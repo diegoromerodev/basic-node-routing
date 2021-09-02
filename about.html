@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+            *, *::before, *::after {
+                margin: 0;
+                padding: 0;
+                border: none;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: "Poppins", sans-serif;
+            }
+            nav {
+                width: 100%;
+                position: fixed;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #3615f3;
+            }
+            nav h4 {
+                color: #0b0147;
+                font-size: 1.6rem;
+                margin-right: 30px;
+            }
+            nav ul {
+                list-style: none;
+            }
+            nav li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            nav li a {
+                display: inline-block;
+                background-color: #3615f3;
+                color: #fafafa;
+                border: 2px solid #fa0092;
+                padding: 1rem;
+                color: #fa0092;
+                font-weight: bold;
+                transition: all 3s ease;
+            }
+            nav li a:hover {
+                background-color: #5b1b70;
+            }
+            .container {
+                background: radial-gradient(#5b1b70, #0b0147);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                color: #fafafa;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            header h1 {
+
+                font-size: 5em;
+                color: #0b0147;
+                text-shadow: -1px -1px 0 #fc15e8,  
+                    1px -1px 5px #fc15e8,
+                    -1px 1px 5px #fc15e8,
+                    1px 1px 5px #fc15e8,
+                    0px 0px 6rem #fc15e8;
+            }
+        </style>
+        <title>ABOUT US - BORGIR RESTAURANTS</title>
+    </head>
+    <body>
+        <nav>
+            <h4>BORGIR + BORGIR</h4>
+            <ul>
+                <li>
+                    <a href="/">HOME</a>
+                    <a href="/about">ABOUT</a>
+                    <a href="/contact-me">CONTACT ME</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <header>
+                <h1>ABOUT BORGIR</h1>
+            </header>
+            <main>
+                <p>
+                    We sell real burgers to earthlings,
+                    nothing mysterious or suspicious about
+                    our business.
+                </p>
+            </main>
+        </div>
+    </body>
+</html>

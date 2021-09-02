@@ -12,10 +12,21 @@
             body {
                 font-family: "Poppins", sans-serif;
             }
-            nav ul {
+            nav {
                 width: 100%;
-                list-style: none;
+                position: fixed;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 background-color: #3615f3;
+            }
+            nav h4 {
+                color: #0b0147;
+                font-size: 1.6rem;
+                margin-right: 30px;
+            }
+            nav ul {
+                list-style: none;
             }
             nav li {
                 display: flex;
@@ -26,14 +37,42 @@
                 display: inline-block;
                 background-color: #3615f3;
                 color: #fafafa;
-                border: 1px solid #fa0092;
+                border: 2px solid #fa0092;
                 padding: 1rem;
+                color: #fa0092;
+                font-weight: bold;
+                transition: all 3s ease;
+            }
+            nav li a:hover {
+                background-color: #5b1b70;
+            }
+            .container {
+                background: radial-gradient(#5b1b70, #0b0147);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                color: #fafafa;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            header h1 {
+
+                font-size: 5em;
+                color: #0b0147;
+                text-shadow: -1px -1px 0 #fc15e8,  
+                    1px -1px 5px #fc15e8,
+                    -1px 1px 5px #fc15e8,
+                    1px 1px 5px #fc15e8,
+                    0px 0px 6rem #fc15e8;
             }
         </style>
         <title>HOME - BORGIR RESTAURANTS</title>
     </head>
     <body>
         <nav>
+            <h4>BORGIR + BORGIR</h4>
             <ul>
                 <li>
                     <a href="/">HOME</a>
@@ -42,8 +81,13 @@
                 </li>
             </ul>
         </nav>
-        <header>
-            <h1>BORGIR RESTAURANTS</h1>
-        </header>
+        <div class="container">
+            <header>
+                <h1>BORGIR RESTAURANTS</h1>
+            </header>
+            <main>
+                <img src="https://media0.giphy.com/media/l1J9LMC5GEw1TS55m/giphy.gif?cid=6c09b952dpdb2e7k0s7pi3e602k2uwckdx8sb27mcwlnel8n&rid=giphy.gif&ct=s">
+            </main>
+        </div>
     </body>
 </html>
